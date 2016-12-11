@@ -1,0 +1,2 @@
+[11-Dec-2016 17:44:31 UTC] PHP Notice:  Undefined variable: validadeOferta in /home/assideulso/xdk/api.php on line 45
+[11-Dec-2016 17:44:31 UTC] PHP Notice:  Undefined property: stdClass::$email in /home/assideulso/xdk/api.php on line 55

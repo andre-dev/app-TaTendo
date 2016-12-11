@@ -1,0 +1,23 @@
+
+Main Hosting Details
+Control panel username
+b32_17455155
+Control panel password	**********
+Control panel URL
+cpanel.byethost32.com
+MySQL username
+b32_17455155
+MySQL password
+**********
+MySQL hostname
+sql211.byethost32.com
+FTP username
+b32_17455155
+FTP password
+**********
+FTP host name	ftp.byethost32.com
+
+
+Your Website URL's
+Home page
+http://webserviceapi.byethost32.com

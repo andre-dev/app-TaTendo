@@ -1,0 +1,35 @@
+<ion-modal-view>
+  <ion-header-bar ng-click="closeCadastro()">
+    <h1 class="title">Cadastro</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeCadastro()">Fecha</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+
+<div class="list">
+
+  <label class="item item-input">
+    <input type="text" placeholder="Nome" ng-model="nome" id="nome">
+  </label>
+
+  <label class="item item-input">
+    <input type="text" placeholder="Sobrenome" ng-model="sobrenome" id="sobrenome">
+  </label>
+ 
+   <label class="item item-input">
+    <input type="email" placeholder="Email" ng-model="email" id="email">
+  </label>
+
+    <label class="item item-input">
+    <input type="password" placeholder="Senha" ng-model="senha" id="senha">
+  </label>
+
+<button id="ok" class="button button-block button-positive" ng-click="cadastrar(nome, sobrenome, email, senha)">
+  Cadastrar
+</button>
+</div>
+
+
+  </ion-content>
+</ion-modal-view>

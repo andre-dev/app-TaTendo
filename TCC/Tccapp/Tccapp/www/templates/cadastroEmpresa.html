@@ -1,0 +1,41 @@
+<ion-modal-view>
+  <ion-header-bar ng-click="closeCadastroEmpresa()">
+    <h1 class="title">Cadastro Empresarial</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeCadastroEmpresa()">Fechar</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+
+<form name="cad" ng-submit="cadastrarEmpresa(cnpj,email,senha)" novalidate>
+<div class="list">
+
+<div  class="form-group"
+      ng-class="{ 'has-error' : cad.cnpj.$invalid && !cad.cnpj.$pristine }">
+  <label class="item item-input">
+    <input type="text" placeholder="CNPJ" ng-model="cnpj" id="cnpj" name="cnpj" class="form-control" maxlength="18" onKeyDown="Mascara(this,Cnpj);" onKeyPress="Mascara(this,Cnpj);" onKeyUp="Mascara(this,Cnpj);" required>
+  </label>
+</div>
+
+  <div  class="form-group"
+        ng-class="{ 'has-error' : cad.email.$invalid && !cad.email.$pristine}">
+   <label class="item item-input">
+    <input type="email" placeholder="Email" ng-model="email" id="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required >
+  </label>
+  </div>
+
+  <div  class="form-group"
+        ng-class="{ 'has-error' : cad.senha.$invalid && !cad.senha.$pristine }">
+    <label class="item item-input">
+    <input type="password" placeholder="Senha" ng-model="senha" id="senha" class="form-control" required>
+   </label>
+  </div>
+<button ng-disabled = "cad.$invalid" class="button button-block button-positive">
+  Cadastrar
+</button>
+</div>
+
+
+
+  </ion-content>
+</ion-modal-view>

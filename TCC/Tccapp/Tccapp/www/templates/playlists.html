@@ -1,0 +1,20 @@
+<ion-view class="title" view-title="Ta Tendo!">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="playlist in lista" href="#/app/playlist" ng-click="dados($index)">
+        <img class="imgBox" src="img/produtos.png">
+        <div class="containerBox">
+            <span class="box1">{{playlist.nomeEmpresa}}</span><br>
+            <span class="box2">{{playlist.descricaoOferta}}</span><br>
+            <span class="box3">Localidade: {{playlist.localidadeOferta}}</span><br> 
+            <span class="box4">Oferta válida até: {{playlist.validadeOferta}}</span>
+        </div>
+        <div>
+            <i class="ion-plus-circled iconeSaibaMais"></i>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+<!--<button class="add" ng-click="cadastro()"><i class="ion-plus-round"></i></button>-->
+
+</ion-view>

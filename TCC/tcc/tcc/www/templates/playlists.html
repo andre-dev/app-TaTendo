@@ -1,0 +1,11 @@
+<ion-view view-title="Prestadores">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="playlist in lista" href="#/app/playlist" ng-click="dados($index)">
+        {{playlist.nome}} {{playlist.sobrenome}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+<button class="add" ng-click="cadastro()"><i class="ion-plus-round"></i></button>
+
+</ion-view>

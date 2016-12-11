@@ -1,0 +1,27 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Login</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Fechar</button>
+    </div>
+  </ion-header-bar>
+    
+    <ion-content>
+
+        <form name="cad" ng-submit="" novalidate>
+        <div class="list">
+
+        <div  class="form-group"
+              ng-class="{ 'has-error' : cad.cnpj.$invalid && !cad.cnpj.$pristine }">
+          <label class="item item-input">
+            <input type="text" placeholder="CNPJ" ng-model="cnpj" id="cnpj" name="cnpj" class="form-control" maxlength="18" onKeyDown="Mascara(this,Cnpj);" onKeyPress="Mascara(this,Cnpj);" onKeyUp="Mascara(this,Cnpj);" required>
+          </label>
+        </div>
+
+        <button ng-disabled = "cad.$invalid" class="button button-block button-positive" ng-click="cadastroOferta(cnpj)">
+          Acessar
+        </button>
+        </div>
+    </ion-content>
+        
+</ion-modal-view>
